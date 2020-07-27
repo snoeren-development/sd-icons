@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+    version="3.9"
+    type="plugin"
+    group="system"
+    method="upgrade">
+    <name>plg_system_sdicons</name>
+    <description>PLG_SYSTEM_SDICONS_XML_DESCRIPTION</description>
+    <version>1.0.0</version>
+
+    <author>Snoeren Development</author>
+    <authorEmail>info@snoerendevelopment.nl</authorEmail>
+    <authorUrl>https://snoerendevelopment.com/</authorUrl>
+
+    <copyright>Snoeren Development (c) 2020</copyright>
+    <license>GNU General Public License 3 or later. See LICENSE</license>
+    <creationDate>27-07-2020</creationDate>
+
+    <files>
+        <filename plugin="sdicons">sdicons.php</filename>
+        <filename>LICENSE</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_sdicons.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_sdicons.sys.ini</language>
+    </languages>
+
+    <media
+        folder="media"
+        destination="plg_system_sdicons">
+        <folder>images</folder>
+        <filename>index.html</filename>
+    </media>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="run_at"
+                    type="list"
+                    label="PLG_SYSTEM_SDICONS_PARAM_RUNAT"
+                    description="PLG_SYSTEM_SDICONS_PARAM_RUNAT_DESC"
+                    required="true"
+                    default="*">
+                    <option value="*">PLG_SYSTEM_SDICONS_PARAM_RUNAT_EVERYWHERE</option>
+                    <option value="administrator">JADMINISTRATOR</option>
+                    <option value="site">JSITE</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+    <updateservers>
+		<server
+            type="extension"
+            priority="2"
+            name="SD Icons">
+            https://snoerendevelopment.com/updates/sd-icons.xml
+        </server>
+	</updateservers>
+</extension>
