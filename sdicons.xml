@@ -43,10 +43,81 @@
                     label="PLG_SYSTEM_SDICONS_PARAM_RUNAT"
                     description="PLG_SYSTEM_SDICONS_PARAM_RUNAT_DESC"
                     required="true"
-                    default="*">
+                    default="site">
                     <option value="*">PLG_SYSTEM_SDICONS_PARAM_RUNAT_EVERYWHERE</option>
                     <option value="administrator">JADMINISTRATOR</option>
                     <option value="site">JSITE</option>
+                </field>
+
+                <field type="spacer" />
+
+                <!-- FontAwesome -->
+                <field
+                    type="note"
+                    label="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_FONTAWESOME"
+                    description="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_FONTAWESOME_NOTE" />
+                <field
+                    name="adapter_fontawesome"
+                    type="radio"
+                    class="btn-group"
+                    label="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_FONTAWESOME"
+                    description="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_FONTAWESOME_DESC"
+                    required="true"
+                    filter="int"
+                    default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                    name="adapter_fontawesome_include"
+                    type="radio"
+                    class="btn-group"
+                    label="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_FONTAWESOME_INCLUDE"
+                    description="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_FONTAWESOME_INCLUDE_DESC"
+                    showon="adapter_fontawesome:1"
+                    required="true"
+                    filter="int"
+                    default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                    name="adapter_fontawesome_kit"
+                    type="url"
+                    label="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_FONTAWESOME_KIT"
+                    description="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_FONTAWESOME_KIT_DESC"
+                    showon="adapter_fontawesome_include:1"
+                    default="" />
+
+                <!-- LineAwesome -->
+                <field
+                    type="note"
+                    label="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_LINEAWESOME"
+                    description="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_LINEAWESOME_NOTE" />
+                <field
+                    name="adapter_lineawesome"
+                    type="radio"
+                    class="btn-group"
+                    label="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_LINEAWESOME"
+                    description="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_LINEAWESOME_DESC"
+                    required="true"
+                    filter="int"
+                    default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                    name="adapter_lineawesome_include"
+                    type="radio"
+                    class="btn-group"
+                    label="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_LINEAWESOME_INCLUDE"
+                    description="PLG_SYSTEM_SDICONS_PARAM_ADAPTER_LINEAWESOME_INCLUDE_DESC"
+                    showon="adapter_lineawesome:1"
+                    required="true"
+                    filter="int"
+                    default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
                 </field>
             </fieldset>
         </fields>
