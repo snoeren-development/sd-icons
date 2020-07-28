@@ -16,6 +16,8 @@
     <license>GNU General Public License 3 or later. See LICENSE</license>
     <creationDate>27-07-2020</creationDate>
 
+    <scriptfile>install.php</scriptfile>
+
     <files>
         <filename plugin="sdicons">sdicons.php</filename>
         <filename>LICENSE</filename>
