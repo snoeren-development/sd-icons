@@ -1,5 +1,16 @@
-<?php
+<?php // phpcs:ignore
 declare(strict_types = 1);
+
+/**
+ * SD Icons
+ *
+ * @author    Snoeren Development
+ * @license   GNU General Public License 3 or later. See LICENSE
+ * @copyright Snoeren Development (c) 2020
+ * @version   1.0.0
+ */
+
+defined('_JEXEC') or die;
 
 class PlgSystemSDIconsInstallerScript
 {
@@ -45,6 +56,13 @@ class PlgSystemSDIconsInstallerScript
         Embed font icons onto your Joomla-powered website using SD Icons!<br>
 
         <ul class="inline list-inline">
+            <li class="list-inline-item">
+                <a
+                    href="index.php?option=com_plugins&filter[search]=SD%20Icons"
+                    class="btn-sd">
+                    Open SD Icons
+                </a>
+            </li>
             <li class="list-inline-item">
                 <a
                     href="https://docs.snoerendevelopment.com/sd-icons"

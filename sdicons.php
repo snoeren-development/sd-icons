@@ -1,4 +1,4 @@
-<?php
+<?php // phpcs:ignore
 declare(strict_types = 1);
 
 use Joomla\CMS\HTML\HTMLHelper;
@@ -12,6 +12,8 @@ use Joomla\CMS\Plugin\CMSPlugin;
  * @copyright Snoeren Development (c) 2020
  * @version   1.0.0
  */
+
+defined('_JEXEC') or die;
 
 class PlgSystemSDIcons extends CMSPlugin
 {
